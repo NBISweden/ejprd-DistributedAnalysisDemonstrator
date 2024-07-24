@@ -393,6 +393,8 @@ document.write(`
                 <article class="bd-article">
                   
   <p>This repository collects examples demonstrating how to run diastributes queries to support federated analysis using the EJP-RD Virtual Platform.</p>
+<p>To build locally you will need a version of python that is compatible with <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a> (such as <code class="docutils literal notranslate"><span class="pre">python:3.10-slim</span></code> on Docker Hub) with the corresponding <a class="reference download internal" download="" href="_downloads/b4ef698db8ca845e5845c4618278f29a/requirements.txt"><span class="xref download myst">requirements</span></a> installed (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">/path/to/requirements.txt</span></code>) to run the notebooks contained in this repository. Use the command <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">/path/to/book</span></code>.</p>
+<p>This repository contains and action that can build the book automatically when changes are committed to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. If activated, the action will commit the output to a branch named <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, that can be used with GitHub pages.</p>
 
     <script type="text/x-thebe-config">
     {
